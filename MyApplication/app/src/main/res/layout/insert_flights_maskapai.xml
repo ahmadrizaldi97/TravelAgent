@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context="com.example.ahmadrizaldi.myapplication.InsertFlights_maskapai">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pa"
+            android:orientation="vertical" >
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Flight Id"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/flightid_mskp"
+                android:entries="@array/maskapai">
+
+            </Spinner>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="From"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/darimana_mskp"
+                android:text="Jakarta (JKTA)"
+                android:focusable="false"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/kemana_mskp"
+                android:text="Surabaya (SUB)"
+                android:focusable="false"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tanggal"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tanggal_berangkat_mskp"
+                android:text="Kamis, 25 Okt 2017"
+                android:focusable="false"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Jam Berangkat"
+                    android:id="@+id/ham"/>
+
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="Jam Tiba"
+                    android:layout_toRightOf="@+id/ham"
+                    android:id="@+id/tib"/>
+
+
+
+                <EditText
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/jamberangkat_mskp"
+                    android:text="00:00"
+                    android:focusable="false"
+                    android:layout_below="@+id/ham"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+                <EditText
+
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/durasi"
+                    android:text="1"
+                    android:focusable="false"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/ham" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kuota Economy Class"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/kuotaeconomy"
+                android:hint="Kuota Economy"
+                android:inputType="number"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kuota Business Class"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/kuotabusniess"
+                android:hint="Kuota Business Class"
+                />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kuota First Class"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/kuotafirstclass"
+                android:hint="Kuota First Class"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga Economy Class"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/hargaeconomyclass"
+                android:inputType="number"
+                android:hint="Harga Economy Class"/>
+
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga Business Class"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/hargabusinessclass"
+                android:hint="Harga Business Class"/>
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Harga First Class"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/hargafirstclass"
+                android:hint="Harga First Class"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/jumlahMaximalReschedule"
+                android:hint="Jumlah Maximal Reschedule"/>
+
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tambah"
+                android:id="@+id/tambahPenerbangan"
+                android:textColor="#ffffff"
+                android:background="@drawable/button_style"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

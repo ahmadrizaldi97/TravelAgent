@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string-array name="maskapai">
+        <item>Garuda Indonesia</item>
+        <item>Citilink</item>
+        <item>Lion Air</item>
+        <item>Sriwijaya Air</item>
+        <item>Air Asia</item>
+        <item>Qatar Airways</item>
+        <item>Trigana Air</item>
+        <item>Wings Air</item>
+    </string-array>
+
+</resources>
